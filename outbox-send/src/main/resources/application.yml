@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: outbox-send
+  datasource:
+    url: jdbc:postgresql://localhost:5432/outbox-pattern
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  threads:
+    virtual:
+      enabled: true
+  kafka:
+    bootstrap-servers: localhost:9092
+server:
+  port: 8081

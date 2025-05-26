@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "TruckOutEvent",
+  "namespace": "com.faycal.outboxsave.entity",
+  "fields": [
+    {
+      "name": "licensePlate",
+      "type": "string"
+    },
+    {
+      "name": "color",
+      "type": "string"
+    },
+    {
+      "name": "eventType",
+      "type": "string"
+    }
+  ]
+}
